@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSENEDEV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <!-- l'entête -->
+    <header>
+        <div class="nav">
+            <div class="brand">
+                <div class="logo">MG</div>
+                <div>
+                    <div class="name">M'bo Arsène</div>
+                    <div class="role">Développeur &amp; Futur Data Scientist</div>
+                </div>
+            </div>
+            <nav class="links">
+                <a href="#accueil" class="active">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#parcours">Parcours</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <button class="theme-btn" onclick="toggleTheme()" id="themeBtn"
+                    aria-label="Changer de thème">🌙</button>
+                <a class="btn btn-grad" href="#contact">Télécharger mon CV ⬇</a>
+            </div>
+        </div>
+    </header>
+      <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="badge"><span class="dot"></span> Disponible pour un stage / une opportunité</div>
+        <h1>Bonjour, je suis<span class="big grad-text">M'bo Arsène</span></h1>
+        <p class="lead">Étudiant en informatique | Développeur passionné. Spécialisé dans le développement web, mobile
+          et la data.</p>
+        <p class="desc">Je transforme les idées en solutions numériques. Mon objectif : devenir un ingénieur en
+          informatique et contribuer à l'innovation en Côte d'Ivoire et en Afrique.</p>
+        <div class="cta-row">
+          <a class="btn btn-grad" href="#projets">↗ Voir mes projets</a>
+          <a class="btn btn-outline" href="#contact">✉ Me contacter</a>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="GitHub" id="githubLink">GH</a>
+          <a href="#" aria-label="LinkedIn" id="linkedinLink">in</a>
+          <a href="#" aria-label="Instagram" id="instagramLink">FB</a>
+          <a href="#" aria-label="YouTube" id="youtubeLink">YT</a>
+          <a href="#" aria-label="TikTok" id="tiktokLink">TK</a>
+          <a href="#" aria-label="Snapchat" id="snapchatLink">snap</a>
+          <a href="#" aria-label="WhatsApp" id="whatsappLink">wp</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+      <img src="./image.pnj/Screenshot_20260706_135951_Gallery.png" alt="Avatar" class="hero-img">  
+    </div>
+  </section>
+  <!-- Section À propos -->
+
+  <section id="apropos">
+    <div class="wrap about-grid">
+      <div class="card">
+        <h2 style="margin-bottom:16px;">👤 À propos de moi</h2>
+        <p>Je suis M'bo Arsène, étudiant en Licence 1 en informatique à l'Université Virtuelle de Côte d'Ivoire (UVCI).
+          Passionné par la technologie, je m'intéresse particulièrement au développement web, mobile et à la data (Data
+          Science, IA).</p>
+        <p>Je suis motivé, curieux et toujours prêt à apprendre de nouvelles compétences. Mon ambition est de devenir un
+          ingénieur en informatique d'ici 3 ans et d'utiliser mes compétences pour avoir un impact positif sur ma
+          communauté et mon pays.</p>
+        <a class="btn btn-grad" href="#projets">En savoir plus →</a>
+      </div>
+      <div class="card info-list">
+        <div class="info-item">
+          <div class="ic">👤</div>
+          <div>
+            <div class="lbl">Nom</div>
+            <div class="val">M'bo Akiapo guy Arsène</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="ic">💼</div>
+          <div>
+            <div class="lbl">fonction</div>
+            <div class="val">Étudiant</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="ic">📍</div>
+          <div>
+            <div class="lbl">Localisation</div>
+            <div class="val">Côte d'Ivoire (Abidjan)</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="ic">🎓</div>
+          <div>
+            <div class="lbl">Formation actuelle</div>
+            <div class="val">Développement d'application e-service (UVCI)</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="ic">🎯</div>
+          <div>
+            <div class="lbl">Objectif</div>
+            <div class="val">Ingénieur en informatique dans 3 ans</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Mes compétences</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="ic">🌐</div>
+          <div>
+            <div class="name">HTML &amp; CSS</div>
+            <div class="lvl">Avancé</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🟨</div>
+          <div>
+            <div class="name">JavaScript</div>
+            <div class="lvl">Débutant</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🦋</div>
+          <div>
+            <div class="name">Flutter</div>
+            <div class="lvl">En apprentissage</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🟣</div>
+          <div>
+            <div class="name">Kotlin (Android)</div>
+            <div class="lvl">Débutant</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🐍</div>
+          <div>
+            <div class="name">Python</div>
+            <div class="lvl">En apprentissage</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">📊</div>
+          <div>
+            <div class="name">Data Science</div>
+            <div class="lvl">En apprentissage</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🔧</div>
+          <div>
+            <div class="name">Git &amp; GitHub</div>
+            <div class="lvl">Intermédiaire</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🎨</div>
+          <div>
+            <div class="name">Figma & Canva</div>
+            <div class="lvl">Intermédiaire</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="ic">🔥</div>
+          <div>
+            <div class="name">Firebase</div>
+            <div class="lvl">Débutant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="projets">
+    <div class="wrap">
+      <div class="section-head" style="justify-content:space-between;">
+        <h2>Mes projets</h2>
+        <a href="#" style="font-size:13.5px;color:var(--muted);">Voir tous mes projets →</a>
+      </div>
+      <div class="projects-grid">
+        <div class="proj">
+          <div class="ic">G</div>
+          <h3>GâtéGâté</h3>
+          <p>Application mobile qui connecte les particuliers ayant des appareils électroniques en panne avec des
+            techniciens intéressés par l'achat.</p>
+          <div class="tags"><span class="tag">Kotlin</span><span class="tag">Android Studio</span><span
+              class="tag">Firebase</span></div>
+        </div>
+        <div class="proj">
+            
+          <div class="ic"><img src="./image.pnj/Web Development Poster.jfif" alt="Web Development Poster"></div>
+          <h3>Mon site web</h3>
+          <p>Site web personnel pour présenter mon parcours, mes compétences et mes projets.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="ic"><img src="./image.pnj/Gens d'affaires de race mixte assis dans un espace de copie de bureau moderne_ _ Photo Premium.jfif" alt="Web Development Poster"></div>
+          <h3>App de gestion (en cours)</h3>
+          <p>Application mobile de gestion de tâches et d'organisation.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
