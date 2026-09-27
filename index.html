@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARSENEDEV</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "XkIWIR_z1MXcIJiUV",
+      });
+   })();
+</script>
 </head>
-
 <body>
     <script src="script.js"></script>
     <!-- l'entête -->
@@ -301,13 +310,14 @@
           </div>
         </div>
       </div>
-      <form class="card" onsubmit="event.preventDefault();alert('Message envoyé (démo) !');this.reset();">
+
+      <form class="card" onsubmit="event.preventDefault();sendemail();">
         <div class="form-grid">
-          <input type="text" placeholder="Votre nom" required>
-          <input type="email" placeholder="Votre email" required>
+          <input type="text" id="name" placeholder="Votre nom" required>
+          <input type="email" id="email" placeholder="Votre email" required>
         </div>
-        <textarea placeholder="Votre message" required></textarea>
-        <button class="btn btn-grad" type="submit" style="width:100%;justify-content:center;">Envoyer ➤</button>
+        <textarea id="message" placeholder="Votre message" required></textarea>
+        <button class="btn btn-grad" type="submit"  style="width:100%;justify-content:center;">Envoyer ➤</button>
       </form>
     </div>
   </section>
@@ -318,8 +328,5 @@
       <div>Le code d'aujourd'hui, les solutions de demain 💜</div>
     </div>
   </footer>
-
-
 </body>
-
 </html>
